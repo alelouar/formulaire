@@ -3,9 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Authentication</title>
+	<style type="text/css">
+		body {margin:0;padding:0;font:14px Arial;}
+		h1{text-align:center;}
+	form {background:#333;color:#fff;width:400px;margin: 0 auto;padding:20px;}
+	
+	label {display:block;font-weight:800;}
+	label+input+label,input:last-child {margin-top:20px;}
+	input:last-child {display:block;}
+	
+	</style>
 </head>
 <body>
 	<h1>formulaire</h1>
-	
+	<form action="reception.php" method="post" enctype="multipart/form-data">
+	<fieldset>
+	<legend>authentication</legend>
+		<label for="log">identifiant</label><input type="text" size="30" id="log">
+		<label for="pass">mot de passe</label><input type="password" size="30" id="pass">
+		<input type="submit" value="envoyer ">
+		</fieldset>
+	</form>
 </body>
 </html>
